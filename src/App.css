@@ -1,38 +1,60 @@
-.App {
+h1 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.table {
+  margin: 20px 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.table-header {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  line-height: 24px;
+  background-color: #ff8100;
+  color: #fff;
+  padding: 0 10px;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+.table-row {
+  display: flex;
+  font-size: 13px;
+  line-height: 24px;
+  padding: 10px;
+  border: 1px solid #e3e3e3;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.table-row:nth-child(even) {
+  background: #cccccca6
+}
+.table-row:nth-child(odd) {
+  background: #cccccc2b
+}
+
+.table-header > span {
+  overflow: hidden;
+  padding: 0 5px;
+}
+
+.table-row > span {
+  overflow: hidden;
+  padding: 0 5px;
+}
+.table-row a, .author {
+  color: #000000;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.hide-button, .upvote-button, .prev-button, .next-button {
+  border-width: 0;
+  background: transparent;
+  text-align: inherit;
+  padding: 0 5px;
+  cursor: pointer;
+}
+.footer {
+  text-align: right;
+}
+.prev-button, .next-button {
+  color: #ff8100;
 }
